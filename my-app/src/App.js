@@ -18,16 +18,16 @@ function App() {
      console.log(transaction)
     })
 },[]);
-// const newArray=data.map((item)=>(
-//   <Table date={item.date} description={item.description} category={item.description} amount={item.amount}/>
-// ))
+function addTransaction(newTransaction){
+  setData([...data,newTransaction]);
+}
   return (
     <div className="App">
        
        <header className="App-header">
        <Header/>
         <Search />
-        <Form/>
+        <Form onSubmit={addTransaction} />
         <Table data={data} />
        
         

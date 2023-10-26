@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-function Form({}){
+function Form({onSubmit}){
     const [formData,setFormData]=useState({
     date:"",
     description:"",
@@ -23,7 +23,15 @@ function Form({}){
                 "Content-Type":"application/json",
             },
             body:JSON.stringify(formData),
-        });
+            
+        })
+        .then((resp)=>resp.json())
+        .then((newTransaction)=>{
+            onSubmit(newTransaction);
+        })
+        
+       
+        
         setFormData({
             date:"",
             description:"",

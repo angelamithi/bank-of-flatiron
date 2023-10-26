@@ -125,6 +125,13 @@
       "category": "cgc",
       "amount": "656",
       "id": 18
+    },
+    {
+      "date": "2023-10-17",
+      "description": "hghh",
+      "category": "income",
+      "amount": "Gift",
+      "id": 19
     }
   ]
 }
