@@ -98,13 +98,19 @@
       "amount": "3000",
       "id": 14
     },
-        
-   {
+    {
       "date": "2023-10-11",
       "description": "Chipollatas",
       "category": "Food",
       "amount": "1200",
       "id": 20
+    },
+    {
+      "date": "2023-10-04",
+      "description": "Burben",
+      "category": "Movies",
+      "amount": "100",
+      "id": 21
     }
   ]
 }

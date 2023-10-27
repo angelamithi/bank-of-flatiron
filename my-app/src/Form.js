@@ -46,7 +46,11 @@ function Form({onSubmit}){
     return (
         <div>
             <form className="Form" onSubmit={handleSubmit}>
-            <input  type="date" id="date" placeholder="Date" value={formData.date} onChange={handleChange}/>
+            <label>
+                Date:  <input  type="date" id="date" placeholder="Date" value={formData.date} onChange={handleChange}/>
+            </label>
+             
+           
             <input type="text" id="description" placeholder="Description" value={formData.description} onChange={handleChange}/>
             <input  type="text" id="category" placeholder="Category" value={formData.category} onChange={handleChange}/>
             <input  type="text" id="amount" placeholder ="Amount" value={formData.amount} onChange={handleChange}/>
