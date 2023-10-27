@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+Royal Bank of Flatiron Transaction Tracker
+This is a React application that allows users to track their transactions. The app fetches transaction data from a local server and provides functionality to add new transactions and search through existing transactions. Below, you'll find an overview of the main components and their functionalities:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Components
 
-## Available Scripts
+1. App
+   • The main application component.
+   • Displays the header, search bar, transaction form, and a table of transactions.
+   • Fetches transaction data from the server and passes it to child components.
+   • Allows the user to add new transactions and filter existing transactions.
+2. Header
+   • A simple header component that displays the bank's name.
+3. Table
+   • Renders a table to display transaction data.
+   • Accepts an array of transactions as a prop and maps them to individual Transaction components for rendering.
+4. Form
+   • Allows users to input new transactions.
+   • Takes user input for date, description, category, and amount.
+   • Submits new transactions to the server and updates the list of transactions displayed in the table.
+5. Transaction
+   • A component for rendering an individual transaction.
+   • Displays the date, description, category, and amount of a transaction.
+6. Search
+   • Renders a search bar to filter transactions.
+   • Accepts user input and passes it to the App component for filtering transactions based on the description.
 
-In the project directory, you can run:
+Usage
 
-### `npm start`
+1. Clone this repository to your local machine.
+2. Make sure you have Node.js and npm installed.
+3. Navigate to the project directory in your terminal and run the following commands to install react dependencies and start the development server:
+   npm install
+   npm start
+4. You should see the application running in your web browser at http://localhost:3000.
+5. Use the search bar to filter transactions based on their descriptions.
+6. Add new transactions by filling out the form and clicking "Add Transaction."
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Additional Information
+• The app uses a local server running at http://localhost:3000/transactions to fetch and store transaction data. Make sure the server is set up and running properly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is not licensed as it is used for educational purposes. Feel free to use and modify the code as per the license terms.
