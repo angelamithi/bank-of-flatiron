@@ -1,8 +1,9 @@
 import React from "react";
 import Transaction from "./Transaction";
+import './App.css';
 function Table({data}){
     return(
-                <table>
+                <table className="table">
                     <thead>
                         <tr>
                             <th>Date</th>

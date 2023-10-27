@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import './App.css';
+
 function Form({onSubmit}){
     const [formData,setFormData]=useState({
     date:"",
@@ -44,12 +46,15 @@ function Form({onSubmit}){
     
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-            <input  type="date" id="date" placeholder="Date" value={formData.date} onChange={handleChange} />
+            <form className="Form" onSubmit={handleSubmit}>
+            <input  type="date" id="date" placeholder="Date" value={formData.date} onChange={handleChange}/>
             <input type="text" id="description" placeholder="Description" value={formData.description} onChange={handleChange}/>
             <input  type="text" id="category" placeholder="Category" value={formData.category} onChange={handleChange}/>
             <input  type="text" id="amount" placeholder ="Amount" value={formData.amount} onChange={handleChange}/>
-            <button type="submit">Add Transaction</button>
+            <div>
+            <button type="submit" id="button">Add Transaction</button>
+           
+            </div>
             </form>
 
         </div>

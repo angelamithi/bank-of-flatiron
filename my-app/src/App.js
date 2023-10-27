@@ -11,7 +11,7 @@ import Table from './Table';
 function App() {
   const[data,setData]=useState([]);
   const[search,setSearch]=useState("");
-  
+
   useEffect(()=>{
     fetch("http://localhost:3000/transactions")
     .then((resp)=>resp.json())
@@ -31,7 +31,7 @@ const filteredTasks=data.filter((trans)=>(
     <div className="App">
        
        <header className="App-header">
-       <Header/>
+       <Header />
         <Search data={data} setSearch={setSearch} />
         <Form onSubmit={addTransaction} />
         {search.length===0 && <Table data={data}/>}

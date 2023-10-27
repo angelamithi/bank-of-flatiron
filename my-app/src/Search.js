@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Transaction from "./Transaction";
+import './App.css';
 
 
 function Search({setSearch}){
@@ -10,8 +10,8 @@ function Search({setSearch}){
   }
 
     return(
-        <div>
-        <input type="text" id="search" placeholder="search" onChange={handleChange}/>
+        <div className="Search">
+        <input type="text" id="search" placeholder="Search your Recent Transactions" onChange={handleChange}/>
               
         </div>
     )

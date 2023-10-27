@@ -1,8 +1,9 @@
 import React from "react";
+import './App.css';
  function Header(){
 
     return (
-    <div> 
+    <div className="Header"> 
      <h3>The Royal Bank of Flatiron</h3>
     </div>)
  }
