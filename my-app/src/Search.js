@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
+import searchIcon from  "./search-icon.png"
 
 
 function Search({setSearch}){
@@ -11,7 +12,9 @@ function Search({setSearch}){
 
     return(
         <div className="Search">
+        
         <input type="text" id="search" placeholder="Search your Recent Transactions" onChange={handleChange}/>
+       
               
         </div>
     )
