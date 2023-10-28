@@ -69,6 +69,19 @@ margin: 10px;
 height: 30px;
 width:200px;
 }
+#click-button{
+ 
+ margin: 10px;
+ background-color: whitesmoke;
+ color:red;
+}
+
+#amount{
+justify-content: space-between;
+align-items: center;
+
+
+}
 .table{
   border: 1px solid;
   margin:10px;

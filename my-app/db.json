@@ -111,6 +111,13 @@
       "category": "Movies",
       "amount": "100",
       "id": 21
+    },
+    {
+      "date": "2023-10-05",
+      "description": "Chipollatas",
+      "category": "Food",
+      "amount": "235",
+      "id": 22
     }
   ]
 }
